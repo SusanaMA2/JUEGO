@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenamiento</title>
+    <link rel="stylesheet" href="styles5.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+             <span class="header-text">VARIABLE: Entrenamiento</span>
+			<button class="close-btn" onclick="close1()">X</button>
+        </div>
+	<span class="body-text">Declara correctamente los tipos de datos. </span>
+
+        <div class="categories">
+            <div class="category entero">entero</div>
+            <div class="category decimal">decimal</div>
+            <div class="category caracter">caracter</div>
+            <div class="category palabra">palabra</div>
+        </div>
+        <div class="variables">
+            <div class="variable mi_variable_decimal">mi_variable_decimal</div>
+            <div class="variable mi_variable_entero">mi_variable_entero</div>
+            <div class="variable mi_variable_caracter">mi_variable_caracter</div>
+            <div class="variable mi_variable_palabra">mi_variable_palabra</div>
+        </div>
+<br><br><br>
+        <div class="subt">
+            <span class="subt">Tipo</span>
+            <span class="subt">Nombre</span>
+            <span class="subt">Valor</span>   
+        </div>
+
+
+        <div class="assignments">
+            <div class="assignment">
+                <input type="text" class="k1" oninput="validateInput('k1', 'entero')">
+                <input type="text" class="v1" oninput="validateInput('v1', 'mi_variable_entero')">
+                <div class="equal">=</div>
+                <div class="value">1 000 000</div>
+            </div>
+            <div class="assignment">
+                <input type="text" class="k2" oninput="validateInput('k2', 'palabra')">
+                <input type="text" class="v2" oninput="validateInput('v2', 'mi_variable_palabra')">
+                <div class="equal">=</div>
+                <div class="value">"100"</div>
+            </div>
+            <div class="assignment">
+                <input type="text" class="k3" oninput="validateInput('k3', 'caracter')">
+                <input type="text" class="v3" oninput="validateInput('v3', 'mi_variable_caracter')">
+                <div class="equal">=</div>
+                <div class="value">'a'</div>
+            </div>
+            <div class="assignment">
+                <input type="text" class="k4" oninput="validateInput('k4', 'decimal')">
+                <input type="text" class="v4" oninput="validateInput('v4', 'mi_variable_decimal')">
+                <div class="equal">=</div>
+                <div class="value">2.4</div>
+            </div>
+        </div>
+
+<div class="button-container">
+            <button class="izq-btn" onclick="anterior2()"><img src="imagen/anterior.png" alt="anterior"></button>
+            <button class="der-btn" onclick="siguiente2()"><img src="imagen/siguiente.png" alt="siguiente"></button>
+        </div>
+        <div id="feedback"></div>
+    </div>
+    <script src="script5.js"></script>
+</body>
+</html>
+
