@@ -1,0 +1,4 @@
+Las variables almacenan diferentes tipos de datos, y se identifican con un nombre.
+Primero aprenderemos a declarar los tipos de datos
+Las variables son muy comunes en programación.
+Le permiten acceder la misma informacion varias veces.
