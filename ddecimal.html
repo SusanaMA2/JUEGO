@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica de Variables</title>
+    <link rel="stylesheet" href="stylese.css">
+    <style>
+        .hidden { display: none; }
+        .success { color: green }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="header-text"> VARIABLE: Declarando decimal</span>
+            <button class="close-btn" onclick="close1()">X</button>
+        </div>
+
+        <div id="content" class="content">
+            <div class="left-column">
+                <img src="imagen/chica.png" alt="Caja" class="box-image1" style="width: 40%;">
+            </div>
+            <div class="right-column">
+                <strong><h2 style="color: #E0AD0B">¡Aprenderemos a declarar datos tipo decimal!</h2></strong>
+                <div class="question">
+                    <label>Hola!!! 👋 Soy Maria, antes de adentrarnos en nuestro tema.</label>
+                    <br>
+                    <strong><label>¿Sabes si puedo medir mi peso?</label></strong>
+                    <br>
+                    <label>
+                        <input type="radio" name="option1" value="si"> si
+                    </label>
+                    <label>
+                        <input type="radio" name="option1" value="no"> No
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div id="content2" class="content hidden">
+            <div class="left-column">
+                <img src="imagen/chica.png" alt="Caja" class="box-image1">
+            </div>
+            <div class="right-column">
+                <div class="question1">
+                    <br>
+                    <label>Correcto!!!</label><br><br>
+                    <label>Tengo una balanza, para medir el peso. </label>
+                    <br><br>
+                    <strong><label>¿Qué muestra la balanza?</label></strong>
+                    <br><br>
+                    <label>
+                        <input type="radio" name="option2" value="letra"> Letra
+                    </label><br><br>
+                    <label>
+                        <input type="radio" name="option2" value="numero"> Número
+                    </label>
+                </div>
+                    <br><br><br><br><br>
+				
+            </div>
+        </div>
+
+        <div id="content3" class="content hidden">
+            <div class="left-column">
+                <img src="imagen/balanza.png" alt="Caja" class="box-image">
+            </div>
+            <div class="right-column">
+                <div class="question2">
+                    <br>
+                    <label>Muy bien!!!. </label><br><br>
+					<label>La balanza muestra que pesa 60.5 kg. </label>
+                    <br><br>
+                    <strong><label> ¿Que partes tiene el numero 60.5?</label></strong>
+                    <br><br>
+                    <label>
+                        <input type="radio" name="option3" value="decimal"> 60 entero y 0.5 decimal
+                    </label><br><br>
+                    <label>
+                        <input type="radio" name="option3" value="entero"> 60 entero
+                    </label>
+                </div>
+				 <br><br><br><br><br><br><br><br><br><br>
+            </div>
+        </div>
+
+        <div id="content4" class="content hidden">
+            <div class="left-column">
+                <img src="imagen/chica2.png" alt="Caja" class="box-image">
+            </div>
+            <div class="right-column">
+                <div id="question3" class="question3">
+                    <label>Genial !!!.<br><br> <h3 style="color: #E0AD0B;">Declaremos que Maria pesa 60.5 Kg.</h3> </label>
+                    <br>
+                    <strong><label>1. Tener en cuenta qué dato vamos a declarar, que sería 60.5. </label></strong><br><br>
+                    <label>Y definiste que 60.5 es un numero formado por parte entera y decimal, es decir que es un número tipo<span class="keyword">decimal</span>. <br><br><br>Entonces: <strong>¿Qué tipo de número es 60.5?</strong></label>
+                    <h3 align="center" style="color: #E0AD0B;">Tipo: <input type="text" class="texto1"></h3><br><br>
+                </div>
+                
+                <div id="question4" class="question4 hidden">
+                    <h3 style="color: #E0AD0B;">Declaremos que Maria pesa 60.5 Kg.</h3>
+                    <br>
+                    <strong><label>2. Definamos un nombre cualquiera, preferiblemente con relación al tema.</label></strong><br><br>
+                    <label></label>
+                    <br>Entonces: <strong>Si estamos declarando el <span class="keyword">peso</span>, ¿qué nombre le pondrías?</strong></label>
+                    <h3 align="center" style="color: #E0AD0B;">Nombre: <input type="text" class="texto2"></h3>
+					<br><br><br>
+					 <div class="subt">
+						<span class="subt">Tipo</span>
+						<span class="subt">Nombre</span>
+						<span class="subt"> = Valor</span>
+							
+					</div>
+					<div class="subt1">
+						<span class="subt1">decimal</span>
+							
+					</div>
+					<br><br>
+				</div>
+
+                <div id="question5" class="question5 hidden">
+                    <h3 style="color: #E0AD0B;">Declaremos que Maria pesa 60.5 Kg.</h3>
+                    <br>
+                    <strong><label>3. Definir el valor con el que estamos trabajando, que sería <span class="keyword">60.5</span>.</label></strong>
+                    <br><br><br>Entonces, ¿qué valor le pondrías?
+                    <h3 align="center" style="color: #E0AD0B;">Valor: <input type="text" class="texto3"></h3><br><br>
+					<div class="subt">
+						<span class="subt">Tipo</span>
+						<span class="subt">Nombre</span>
+						<span class="subt"> = Valor</span>
+							
+					</div>
+					<div class="subt1">
+						<span class="subt1">decimal</span>
+						<span class="subt1">peso</span>
+						<span class="subt1">=</span>						
+					</div>
+					<br><br>
+				</div>
+
+                <div id="question6" class="question6 hidden">
+                    <h3 style="color: #E0AD0B;">Declaremos que Maria pesa 60.5 Kg.</h3>
+                    <br>
+                    <strong><label>Respuesta:</label></strong>
+                    <br><br><br>
+                    <div class="subt">
+                        <span class="subt">Tipo</span>
+                        <span class="subt">Nombre</span>
+                        <span class="subt"> = Valor</span>
+                    </div>
+                    <div class="subt1"><br>
+                        <span class="subt1">decimal</span>
+                        <span class="subt1">peso</span>
+                        <span class="subt1">= 60.5</span>                      
+                    </div>
+                    <br><br><br><br><br><br><br><br><br>
+                </div>
+            </div>
+        </div>
+        
+        <div class="button-container">
+            <button class="izq-btn" onclick="anterior()"><img src="imagen/anterior.png" alt="anterior"></button>
+            <button class="der-btn" onclick="siguiente()" disabled><img src="imagen/siguiente.png" alt="siguiente"></button>
+        </div>
+    </div>
+
+    <script src="scriptd.js"></script>
+</body>
+</html>

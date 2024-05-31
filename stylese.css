@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1d4d9f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    background-color: #003366;
+    border-radius: 15px;
+    padding: 20px;
+    width: 900px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    background-color: #00a2ff;
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+
+.content,.content2,.content3,.content4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+	
+}
+
+.left-column, .right-column {
+    width: 45%;
+}
+
+.left-column {
+    text-align: center;
+}
+
+.box-image {
+    width: 100%;
+    height: auto;
+	border-radius: 10px;
+}
+
+.right-column {
+    text-align: left;
+}
+
+.question {
+    margin-top: 20px;
+}
+
+.question label {
+    display: block;
+    margin: 10px 0;
+}
+
+
+
+.close-btn {
+    margin-right: 10px;
+    top: 110px;
+    right: 250px;
+    background-color: #ff5c5c;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text {
+    font-weight: bold;
+}
+
+.subt span,.subt1 span {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.subt {
+	background-color: #E0AD0B;
+    margin-left: 29px;
+	color:black;
+}
+.subt1 {
+	background-color: white;
+    margin-left: 29px;
+	color:black;
+}
+
+input[type="radio"] {
+    margin-left: 5px;
+}
+
+	
+	.keyword {
+    background-color: #E0AD0B;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+	color:black;
+}
+.texto1
+{
+    width: 60px; /* Tamaño deseado para los campos de entrada */
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Espacia los botones */
+    width: 100%;
+    margin-top: 20px;
+}
+
+.izq-btn, .der-btn {
+    background-color: #42B76D;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.izq-btn img, .der-btn img {
+    width: 20px; /* Tamaño deseado para las imágenes de los botones */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.der-btn {
+    margin-left: auto; /* Asegura que el botón derecho esté separado */
+}
+
+.der-btn:disabled {
+    background-color: lightgray; /* Color cuando está desactivado */
+    color: gray; /* Color del texto cuando está desactivado */
+    opacity: 0.1; /* Opacidad cuando está desactivado */
+}
+
+.der-btn:not(:disabled) {
+    background-color: #42B76D; /* Color original cuando está activado */
+    color: white; /* Color del texto cuando está activado */
+    opacity: 1; /* Opacidad cuando está activado */
+}
