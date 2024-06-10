@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+header .logo, header .usuario {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img, header .usuario img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    position: relative;
+}
+
+.camino {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.circulo, .estrella {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.circulo img, .estrella img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.circulo span, .estrella span {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Camino curvo */
+.camino {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 100px);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circulo:nth-child(1) { grid-column: 2; grid-row: 1; }
+.circulo:nth-child(2) { grid-column: 3; grid-row: 1; }
+.circulo:nth-child(3) { grid-column: 4; grid-row: 1; }
+.circulo:nth-child(4) { grid-column: 4; grid-row: 2; }
+.circulo:nth-child(5) { grid-column: 4; grid-row: 3; }
+.circulo:nth-child(6) { grid-column: 3; grid-row: 3; }
+.circulo:nth-child(7) { grid-column: 2; grid-row: 4; }
+.estrella { grid-column: 2; grid-row: 5; }
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .circulo img, .estrella img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .circulo span, .estrella span {
+        font-size: 12px;
+    }
+
+    .camino {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(8, 80px);
+    }
+
+    .circulo:nth-child(1) { grid-column: 2; grid-row: 1; }
+    .circulo:nth-child(2) { grid-column: 2; grid-row: 2; }
+    .circulo:nth-child(3) { grid-column: 2; grid-row: 3; }
+    .circulo:nth-child(4) { grid-column: 2; grid-row: 4; }
+    .circulo:nth-child(5) { grid-column: 2; grid-row: 5; }
+    .circulo:nth-child(6) { grid-column: 2; grid-row: 6; }
+    .circulo:nth-child(7) { grid-column: 2; grid-row: 7; }
+    .estrella { grid-column: 2; grid-row: 8; }
+}

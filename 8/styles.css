@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+.contenedor {
+    width: 500px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .usuario {
+    font-size: 18px;
+}
+
+.grid-contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.circulo, .estrella {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.circulo {
+    border-radius: 50%;
+    background-color: #eee;
+}
+
+.estrella {
+    width: 60px;
+    height: 60px;
+    background-color: #ffc107;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+/* Posicionamiento de los elementos */
+.grid-contenedor > :nth-child(1) { grid-column: 1; grid-row: 1; }
+.grid-contenedor > :nth-child(2) { grid-column: 2; grid-row: 1; }
+.grid-contenedor > :nth-child(3) { grid-column: 3; grid-row: 1; }
+.grid-contenedor > :nth-child(4) { grid-column: 4; grid-row: 1; }
+.grid-contenedor > :nth-child(5) { grid-column: 3; grid-row: 2; }
+.grid-contenedor > :nth-child(6) { grid-column: 2; grid-row: 2; }
+.grid-contenedor > :nth-child(7) { grid-column: 1; grid-row: 3; }
+.grid-contenedor > :nth-child(8) { grid-column: 2; grid-row: 3; }
+.grid-contenedor > :nth-child(9) { grid-column: 3; grid-row: 3; }
+.grid-contenedor > :nth-child(10) { grid-column: 4; grid-row: 3; }

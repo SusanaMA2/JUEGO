@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica de Variables</title>
+    <link rel="stylesheet" href="stylese.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hidden { display: none; }
+        .success { color: green; font-size: 1.2em; margin-left: 10px; } /* Ajusta según el tamaño deseado */
+        .failure { color: red; font-size: 1.2em; margin-left: 10px; }
+		
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="header-text"> VARIABLE: Declarando entero</span>
+            <button class="close-btn" onclick="close1()"><strong>X</strong></button>
+        </div>
+        <div id="content0" class="content0">
+            <div class="left-column">
+                <img src="imagen/bts2.jpg" alt="Caja" class="box-image" style="width: 100%;">
+            </div>
+            <div class="right-column">
+                <strong><h2 style="color: #E0AD0B">¡Aprenderemos a declarar datos tipo entero!</h2></strong>
+                <div class="question">
+                    <label>Identifica el tipo</label>
+                    <br>
+					 <div class="option-container"> 
+                    <strong><label>1. ¿Cuántas personas son?</label></strong>
+                    
+                    <h3 align="center" style="color: #E0AD0B;"><input type="text" class="texto0"></h3>
+					</div>
+					<br><br><br>
+				</div>
+            </div>
+        </div>
+
+
+        <div id="content" class="content hidden">
+            <div class="left-column">
+                <img src="imagen/bts2.jpg" alt="Caja" class="box-image1" style="width: 100%;">
+            </div>
+            <div class="right-column">
+                <strong><h2 style="color: #E0AD0B">¡Aprenderemos a declarar datos tipo entero!</h2></strong>
+                <div class="question">
+                    <label>Identifica el tipo</label>
+                    <br>
+					 <div class="option-container"> 
+                    <strong><label>2. ¿Qué es 7?</label></strong>
+                    
+                    <label>
+                        <input type="radio" name="option1" value="letra"> Letra
+                    </label>
+                    <label>
+                        <input type="radio" name="option1" value="numero"> Número
+                    </label>
+					</div>
+					<br><br>
+                </div>
+            </div>
+        </div>
+
+        <div id="content2" class="content hidden">
+            <div class="left-column">
+                <img src="imagen/bts2.jpg" alt="Caja" class="box-image" style="width: 100%;">
+            </div>
+            <div class="right-column">
+			<strong><h2 style="color: #E0AD0B">¡Aprenderemos a declarar datos tipo entero!</h2></strong>
+                <div class="question1">
+                    <label>Identifica el tipo</label>
+                    <br><br>
+					 <div class="option-container"> 
+                    <strong><label>3. ¿Qué tipo de número es 7?</label></strong>
+                    <br><br>
+                    <label>
+                        <input type="radio" name="option2" value="decimal"> Decimal
+                    </label><br><br>
+                    <label>
+                        <input type="radio" name="option2" value="entero"> Entero
+                    </label>
+					</div>
+                </div>
+                    <br><br><br>
+				
+            </div>
+        </div>
+
+
+        <div id="content4" class="content hidden">
+            <div class="left-column">
+                <img src="imagen/bts2.jpg" alt="Caja" class="box-image" style="width: 100%;">
+            </div>
+            <div class="right-column">
+			<strong><h2 style="color: #E0AD0B">¡Aprenderemos a declarar datos tipo entero!</h2></strong>
+			<label>Declaremos a los 7 miembros del grupo BTS</label>
+			
+                <div id="question3" class="question3">
+					
+                    
+                    <br><br>
+					<div class="option-container">
+                    <strong><label>1. Identifiquemos el tipo. </label></strong><br><br>
+                    <label>Definiste que 7 es un número tipo <span class="keyword">entero</span>. <br><br><strong>Entonces:</strong></label>
+                    <h4 align="center" style="color: #AB8300;">Tipo: <input type="text" class="texto1"></h4>
+					</div>
+					
+                </div>
+                
+                <div id="question4" class="question4 hidden">
+                    
+                    <br>
+					<div class="option-container">
+                    <strong><label>2. Define un nombre cualquiera</strong>, que tenga relación al tema.</label><br><br>
+                    
+                    Llamesmole <span class="keyword">bts</span></strong>. <br><strong>Entonces:</strong></label>
+                    <h4 align="center" style="color: #AB8300;">Nombre: <input type="text" class="texto2"></h4>
+					
+					</div>
+					<br>
+					<strong><span class="respuesta">Respuesta:</span></strong>
+					
+					 <div class="subt">
+						<span class="subt">Tipo</span>
+						<span class="subt">Nombre</span>
+						<span class="subt"> = Valor</span>
+							
+					</div>
+					<div class="subt1">
+						<span class="subt1">entero</span>
+							
+					</div>
+					
+				</div>
+
+                <div id="question5" class="question5 hidden">
+                    
+                    <br><br>
+					<div class="option-container">
+                    <strong><label>3. Definir el valor</strong> con el que estamos trabajando.</label><br><br> 
+					El valor sería <span class="keyword">7</span>.</label>
+                    <br><strong>Entonces:</strong>
+                    <h4 align="center" style="color:#AB8300;">Valor: <input type="text" class="texto3"></h4>
+					</div>
+					<br>
+					<strong><span class="respuesta">Respuesta:</span></strong>
+					<div class="subt">
+						<span class="subt">Tipo</span>
+						<span class="subt">Nombre</span>
+						<span class="subt"> = Valor</span>
+							
+					</div>
+					<div class="subt">
+						<span class="subt1">entero</span>
+						<span class="subt1">bts</span>
+						<span class="subt1">=</span>						
+					</div>
+					
+				</div>
+
+                <div id="question6" class="question6 hidden">
+                    <br>
+                    <br>
+                    <strong><label>Respuesta:</label></strong>
+                    <br><br>
+                    <div class="subt">
+                        <span class="subt">Tipo</span>
+                        <span class="subt">Nombre</span>
+                        <span class="subt"> = Valor</span>
+                    </div>
+                    <div class="subt3"><br>
+                        <span class="subt3">entero</span>
+                        <span class="subt3">bts</span>
+                        <span class="subt3"> = 7</span>                      
+                    </div>
+                    <br><br><br><br><br>
+                </div>
+            </div>
+        </div>
+        
+        <div class="button-container">
+            <button class="izq-btn" onclick="anterior()"><img src="imagen/anterior.png" alt="anterior"></button>
+            <button class="der-btn" onclick="siguiente()" disabled><img src="imagen/siguiente.png" alt="siguiente"></button>
+        </div>
+    </div>
+
+    <script src="scripte.js"></script>
+</body>
+</html>

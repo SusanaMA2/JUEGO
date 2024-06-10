@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica de Variables</title>
+    <link rel="stylesheet" href="stylese.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hidden { display: none; }
+        .success { color: green; font-size: 1.2em; margin-left: 10px; } /* Ajusta según el tamaño deseado */
+        .failure { color: red; font-size: 1.2em; margin-left: 10px; }
+		
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="header-text"> VARIABLE: Identificando numeros decimales</span>
+            <button class="close-btn" onclick="close1()"><strong>X</strong></button>
+        </div>
+
+        <div id="content" class="content hidden">
+				<div id="question3" class="question3 hidden">
+						<strong><h2 style="color: #E0AD0B">¡Aprenderemos a identificar numeros decimales!</h2></strong>
+						
+						<br><br>
+						<label>Identifica los siguientes datos: </label> <br>
+						<strong><h3 style="color: #E0AD0B; word-spacing: 40px;">-1,50000 -5,01 -15,0 0,0 1,500 10,001 14,8002020 ...</h3></strong>
+					 <div class="option-container"> 
+						<strong><label>1. ¿Qué representan?</label></strong>
+						<br><br>
+						<label>
+							<input type="radio" name="option1" value="letra"> Letras
+						</label><br><br>
+						<label>
+							<input type="radio" name="option1" value="numero"> Números
+						</label>
+					</div>	
+						
+				
+                   
+                </div>
+				<div id="question4" class="question4 hidden">
+						<strong><h2 style="color: #E0AD0B">¡Aprenderemos a identificar numeros decimales!</h2></strong>
+						
+						<br><br>
+						<label>Identifica los siguientes datos:  </label> <br>
+						<strong><h3 style="color: #E0AD0B; word-spacing: 40px;">-1,50000 -5,01 -15,0 0,0 1,500 10,001 14,8002020 ...</h3></strong>
+						 <div class="option-container"> 
+						<strong><label>2. ¿Qué tipos de números contiene?</label></strong>
+						<br><br>
+						<label>
+							<input type="radio" name="option2" value="negativo">Números negativos y positivos, y un número neutro.
+						</label><br><br>
+						<label>
+							<input type="radio" name="option2" value="sneutro"> Números negativos y positivos.
+						</label>
+						</div>
+						
+						
+				
+                   
+                </div>
+                
+                
+                <div id="question5" class="question5 hidden">
+                   <br>
+                   
+					<strong><h2 style="color: #E0AD0B">¡Aprenderemos a identificar numeros enteros!</h2></strong>
+						
+						<br><br>
+						<label>Identifica los siguientes datos:</label> <br>
+						<strong><h3 style="color: #E0AD0B; word-spacing: 40px;">-1,50000 -5,01 -15,0 0,0 1,500 10,001 14,8002020 ...</h3></strong>
+						 <div class="option-container"> 
+						<strong><label>3. ¿Qué tipo de números son?</label></strong>
+						<br><br>
+						<label>
+							<input type="radio" name="option3" value="decimal">Decimal
+						</label><br><br>
+						<label>
+							<input type="radio" name="option3" value="entero"> Entero
+						</label>
+						</div>
+						
+						
+				</div>
+
+		</div>
+ 
+        
+        <div class="button-container">
+            <button class="izq-btn" onclick="anterior()"><img src="imagen/anterior.png" alt="anterior"></button>
+            <button class="der-btn" onclick="siguiente()" disabled><img src="imagen/siguiente.png" alt="siguiente"></button>
+        </div>
+    </div>
+
+    <script src="scripte2.js"></script>
+</body>
+</html>
