@@ -1,0 +1,108 @@
+#game-board {
+    width: 250px;
+    height: 250px;
+    
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.cell {
+    border: 1px solid #003366;
+    position: relative;
+    overflow: hidden;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+#controls button {
+    margin-right: 10px;
+}
+
+#game-board {
+    position: relative; /* Establece el contexto de posicionamiento */
+}
+
+#game-board img {
+    position: absolute; /* Hace que la imagen se posicione con respecto a su primer ancestro posicionado */
+    top: 50%; /* Coloca la parte superior de la imagen en el 50% del contenedor */
+    left: 50%; /* Coloca la izquierda de la imagen en el 50% del contenedor */
+    transform: translate(-50%, -50%); /* Centra la imagen horizontal y verticalmente */
+    width: 150%; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 150%;
+    object-fit: cover; /* Ajusta el tamaño de la imagen manteniendo su relación de aspecto y cubriendo el contenedor */
+}
+
+
+
+/* Ajustes para el camino */
+.cell.path {
+    background-color: #232526; /* Celeste */
+    border-color: white; /* Bordes blancos */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding:5px;
+    border: 1px solid #888;
+    width: 50%;
+    text-align: center;
+	border-radius: 15px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	color:black;
+}
+
+.modal-content img {
+    width: 250px; /* Ajustar tamaño de la imagen según sea necesario */
+    height: auto;
+}
+
+
+/* Estilo para el mensaje */
+.message {
+    font-weight: bold; /* Texto en negrita */
+    font-size: 1.5em; /* Tamaño de fuente más grande */
+    animation: fadeIn 2s; /* Animación de entrada */
+	color:#063FFF
+}
+
+/* Definición de la animación */
+@keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+/* Estilo para el botón */
+.Siguiente {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s; /* Suavizado de la transición */
+}
+
+.Siguiente:hover {
+    background-color: #45a049; /* Color de fondo al pasar el ratón */
+}
