@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica de Variables</title>
+    <link rel="stylesheet" href="stylese.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hidden { display: none; }
+        .success { color: green; font-size: 1.2em; margin-left: 10px; } /* Ajusta según el tamaño deseado */
+        .failure { color: red; font-size: 1.2em; margin-left: 10px; }
+		
+    </style>
+</head>
+<body>
+<br><br><br>
+    <div class="container">
+        <div class="header">
+            <span id="header-text" class="header-text"> Declara variable tipo entero </strong> <span id="header-text1" class="header-text1"></span></span>
+            <button class="close-btn" onclick="close1()"><strong>X</strong></button>
+        </div>
+		
+		<! -- ------------------> 
+
+		<div id="contentp" class="contentp">
+            <div class="left-column1">
+                
+				<div style="width: 60%;clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);">
+					<img src="imagen/enterop.png" alt="Caja" class="box-image">
+				</div>
+				 <button id="r-btn"><img src="imagen/r.png" alt="imagen"></button>				
+                       
+                </div>
+				
+            </div>
+          
+		<! -- ------------------> 
+
+		<div id="contents" class="contents hidden">
+            <div class="left-column">
+                
+				<img src="imagen/bts2.jpg" alt="Caja" class="box-image" style="width: 70%;"><br><br>
+								
+                <div id="question2" class="question2">
+					<strong><h3 style="color: white">Declara a las 7 personas del grupo BTS : </h3></strong>
+					<div class="option-container">
+					
+                    <div class="subts">
+                        <span class="subts">Tipo</span>
+                        <span class="subts">Nombre</span>
+                        <span class="subts"> = </span>
+						<span class="subts"> Valor</span>
+                    </div>
+                    
+					<div class="subt1">
+					    <button class="tipo-btn" id="tipo-btn" disabled></button>
+                        <button class="nombre-btn" id="nombre-btn" disabled></button>
+                        =
+                        <button class="valor-btn" id="valor-btn"><img id="imgmano"src="imagen/mano.png" alt="imagenb"></button>
+                    </div>
+					
+                </div>
+				
+            </div>
+			<br><br>
+           </div>  
+        </div>
+		<! -- ------------------> 
+
+        <div id="content0" class="content0 hidden">
+            <div class="left-column">
+                
+				<img src="imagen/bts2.jpg" alt="Caja" class="box-image" style="width: 70%;"><br><br>
+								
+                <div id="question2" class="question2">
+					<strong><h3 style="color: white">Declara a los 7 personas del grupo BTS : </h3></strong>
+					<div class="option-container">
+					
+					<strong><span class="circle">1</span> Identifica el valor</strong>, con el que trabajaremos.
+					<br><br>
+					<strong>¿Cuántas personas vas a declarar?</strong>
+					<br><br>
+					<label>
+                        <input type="radio" name="option1" value="8"> 8
+                    </label>
+					<br>
+                    <label>
+                        <input type="radio" name="option1" value="7"> 7
+                    </label>
+                   
+                    
+					</div>
+					<br><br>
+					
+                </div>
+				
+            </div>
+            
+        </div>
+		
+		<! -- ------------------> 
+
+		
+        <div id="content2" class="content hidden">
+            <div class="left-column">
+			
+                
+                <div class="question1">
+				<h3><strong  style="color: #E6C51F;">Visualiza el video</strong></h3>	
+                   
+                    <video id="myVideo" width="450" height="340" controls>
+						<source src="video/entero.mp4" type="video/mp4">
+						
+					</video>
+					<br><br>
+					<div class="option-container">
+						<strong><span class="circle">3</span> Según el video, ¿Qué tipo de número es 7? </strong>
+						<br><br>						
+						<label>
+								<input type="radio" name="option3" value="entero"> entero
+							</label>
+							<br><br>
+							                
+                    </div>
+                    
+					
+					
+					
+                </div>
+                    <br><br><br>
+            </div>
+            
+        </div>
+		
+		<! -- ------------------> 
+
+		
+        <div id="content3" class="content hidden">
+				
+					
+					
+            <div class="left-column">
+               
+					<h3><strong  style="color: #E6C51F;">Visualiza la imagen</strong></h3>	
+					<img src="imagen/nombre.PNG" alt="Caja" class="box-image" style="width: 70%;"><br><br>
+					                   	
+				
+					 <div id="question4">
+                    
+							<div class="option-container">
+							
+							<strong><span class="circle">2</span> Define un nombre cualquiera </strong>
+							, que pueda representar al numero 7.
+														
+							<br><br>
+							<strong>Nombres:</strong><br><br>
+							<label>
+								<input type="radio" name="option2" value="1"> bts
+							</label>
+							<br>
+							<label>
+								<input type="radio" name="option2" value="2"> siete
+							</label>
+							<br>
+							<label>
+								<input type="radio" name="option2" value="3"> 7personas
+							</label>
+									
+							<br><br>
+														
+							
+							
+							</div>
+					</div>
+			</div>
+		
+		</div>
+			
+		<! -- ------------------> 
+        <div id="contentm" class="content hidden">
+			<img id="gif" src="imagen/feliz.gif" alt="GIF animado" style="width: 20%;" >
+			<br><br>
+			<div id="message">¡Felicitaciones! <br>Aprendiste a declarar una variable tipo entero.</div>
+		   </div>
+		<br><br>
+
+        	<! -- ------------------> 
+        <div class="button-container">
+            <button class="izq-btn" onclick="anterior()" disabled><img src="imagen/anterior.png" alt="anterior"></button>
+            <button id="siguiente-btn" class="der-btn" onclick="siguiente()" disabled><img src="imagen/siguiente.png" alt="siguiente"></button>
+        </div>
+		<br><br>
+    </div>
+<br><br><br>
+    <script src="scriptej2.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+	
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    align-items: center;
+}
+
+th, td {
+   
+    text-align: center;
+    padding: 8px;
+	width: 25%;
+    height: 150px;
+	vertical-align: middle; 
+	position: relative;
+	font-weight: bold;
+	border: 10px solid white;
+		
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo-section, .user-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo, .user-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+	border-radius: 15px;
+}
+
+.logo-name, .user-name {
+    font-size: 18px;
+}
+
+.logo-section .logo-name {
+    color: #FFD700; /* Optional: Change the logo name color */
+}
+
+.user-section .user-name {
+    color: #ADFF2F; /* Optional: Change the user name color */
+}
+
+
+.circulo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%; /* Esto hace que tenga forma de círculo */
+      overflow: hidden; /* Para ocultar cualquier contenido que se desborde */
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Esto agrega un sombreado */
+	 display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: white;
+      
+    }
+
+    .circulo img {
+      width: 100%; /* Para que la imagen ocupe todo el espacio dentro del círculo */
+      height: auto; /* Para mantener la proporción */
+    }
+	
+/* Colores de fondo específicos para las celdas con imágenes */
+.bg-color-1 {
+    background-color: #FFD700; /* Dorado */
+}
+
+.bg-color-2 {
+    background-color: #ADFF2F; /* Verde */
+}
+
+.bg-color-3 {
+    background-color: #87CEEB; /* Azul cielo */
+}
+
+.bg-color-4 {
+    background-color: #FF69B4; /* Rosa */
+}
+
+.bg-color-5 {
+    background-color: #FFA07A; /* Salmón claro */
+}
+
+.bg-color-6 {
+    background-color: #9370DB; /* Púrpura medio */
+}
+
+.bg-color-7 {
+    background-color: #FF4500; /* Naranja rojo */
+}
+
+
+/* Estilos para las celdas con imágenes */
+.bg-color-2, .bg-color-3, .bg-color-4, .bg-color-5, .bg-color-6, .bg-color-7 {
+    position: relative; /* Necesario para superponer el fondo negro */
+}
+
+.bg-color-2::before,
+.bg-color-3::before,
+.bg-color-4::before,
+.bg-color-5::before,
+.bg-color-6::before,
+.bg-color-7::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente negro */
+    opacity: var(--opacity-before, 1);  /* Inicialmente oculto */
+    pointer-events: none; /* No permite interacción */
+    transition: opacity 0.3s ease; /* Transición suave */
+}
+
+/* Mostrar el fondo semitransparente cuando se hace hover en la celda */
+.bg-color-2:hover::before,
+.bg-color-3:hover::before,
+.bg-color-4:hover::before,
+.bg-color-5:hover::before,
+.bg-color-6:hover::before,
+.bg-color-7:hover::before {
+    opacity: 1;
+}
+
+/* Estilo adicional cuando la celda está activa */
+.bg-color-2.active::before,
+.bg-color-3.active::before,
+.bg-color-4.active::before,
+.bg-color-5.active::before,
+.bg-color-6.active::before,
+.bg-color-7.active::before {
+    opacity: 0; /* Ocultar el fondo semitransparente cuando la celda está activa */
+}
